@@ -61,4 +61,9 @@ class User extends Authenticatable
     {
         return null !== $this->roles()->where('name', $role)->first();
     }
+
+    public function orders()
+    {
+        return $this->hasMany('App\Order');
+    }
 }

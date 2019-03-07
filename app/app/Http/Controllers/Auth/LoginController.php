@@ -42,10 +42,10 @@ class LoginController extends Controller
     {
         // Logic that determines where to send the user
         if($request->user()->hasRole('customer')){
-            return redirect('/products/');
+            return redirect('/orders');
         }
         if($request->user()->hasRole('admin')){
-            return redirect('/products/create');
+            return redirect('/products');
         }
         return redirect($redirectTo);
     }

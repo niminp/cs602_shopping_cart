@@ -25,8 +25,10 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::resource('products', 'ProductController');
-Route::resource('orders', 'OrderController');
+Route::resource('products', 'ProductController')->middleware('auth');
+Route::resource('orders', 'OrderController')->middleware('auth');
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
+Route::get('/customers', 'CartController@customers')->middleware('auth');
+Route::get('/customers/{customerID}/orders', 'CartController@orders')->middleware('auth');

@@ -46,6 +46,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/orders/') }}">All Orders</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url('/customers/') }}">All Customers</a>
+                                </li>
                             @endif
                             @if(Auth::user()->hasRole('customer'))
                                 <li class="nav-item">

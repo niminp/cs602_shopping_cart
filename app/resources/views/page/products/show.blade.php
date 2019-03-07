@@ -7,7 +7,7 @@
 			<div class="card-body">
 				<h4>{{$product->name}}</h4>
 				<p>Description: {{$product->description}}</p>
-				<p>Price: ${{$product->price}}</p>
+				<p>Price: ${{number_format($product->price, 2)}}</p>
 				<p>Quantity: {{$product->quantity}}</p>
 				
 				<a href="/products/{{$product->id}}/edit/" class="btn btn-primary">Edit</a>

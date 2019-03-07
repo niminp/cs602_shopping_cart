@@ -7,7 +7,7 @@
 		<a href="/products/create/" class="btn btn-primary text-center">Add a Product</a>
 	</div>
 
-	@if(count($products) > 1)
+	@if(count($products) > 0)
 		<table id="products_table">
 			<thead>
 				<tr>

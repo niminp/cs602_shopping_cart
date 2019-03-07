@@ -27,43 +27,43 @@ class CreateProductsTable extends Migration
                 'name' => 'Absolute Vodka',
                 'description' => 'Absolute Vodka description',
                 'price' => 25.99,
-                'quantity' => 5
+                'quantity' => 20
             ),
             array(
                 'name' => 'Merlot Wine',
                 'description' => 'Merlot Wine description',
                 'price' => 15.99,
-                'quantity' => 5
+                'quantity' => 20
             ),
             array(
                 'name' => 'Kettle One Vodka',
                 'description' => 'Kettle One description',
                 'price' => 30.99,
-                'quantity' => 5
+                'quantity' => 20
             ),
             array(
                 'name' => 'Bacardi Rum',
                 'description' => 'Bacardi Rum description',
                 'price' => 20.99,
-                'quantity' => 5
+                'quantity' => 20
             ),
             array(
                 'name' => 'Johney Walker Black Wiskey',
                 'description' => 'Johney Walker Black Wiskey description',
                 'price' => 40.99,
-                'quantity' => 5
+                'quantity' => 20
             ),
             array(
                 'name' => 'Samuel Adams Beer',
                 'description' => 'Samuel Adams Beer description',
                 'price' => 12.99,
-                'quantity' => 5
+                'quantity' => 20
             ),
             array(
                 'name' => 'Harpoon Beer',
                 'description' => 'Harpoon Beer description',
                 'price' => 14.99,
-                'quantity' => 5
+                'quantity' => 20
             )
         ];
 

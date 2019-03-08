@@ -25,7 +25,11 @@
 						<tbody>
 						@foreach($order->order_details()->get() as $order_detail)
 							<tr>
-								<td><a href="/products/{{$order_detail->product->id}}">{{$order_detail->product->name}}</a></td>
+								@if(Auth::user()->hasRole('admin'))
+									<td><a href="/products/{{$order_detail->product->id}}">{{$order_detail->product->name}}</a></td>
+								@else
+									<td>{{$order_detail->product->name}}</td>
+								@endif
 								<td>${{number_format($order_detail->price, 2)}}</td>
 								<td>{{$order_detail->quantity}}</td>
 							</tr>

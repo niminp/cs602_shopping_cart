@@ -60,7 +60,7 @@ class APIProductController extends Controller
         }
         else if ($request_type == 'XML')
         {
-            return response()->make($this->generate_product_xml($products_array ,'products'), '200')->header('Content-Type', 'text/xml');
+            return response()->make($this->generate_product_xml($products_array ,'product'), '200')->header('Content-Type', 'text/xml');
         }
         else
         {

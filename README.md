@@ -13,3 +13,17 @@ Instructions on how to install the project:
 8) Configure Web server or use "php artisan serve" to start a development server to view the app on your browser. 
 9) Connect to the Web Application on your browser
 10) Enjoy shopping
+
+Running the migration on step 7 will prepopulate some products that customers can order.  It will also create the below user accouts for use. 
+
+Username: admin@bu.edu
+Password: password
+Role: Admin
+
+Username: customer@bu.edu
+Password: password
+Role: Customer
+
+Username: customer2@bu.edu
+Password: password
+Role: Customer

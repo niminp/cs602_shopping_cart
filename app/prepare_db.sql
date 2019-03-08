@@ -1,5 +1,5 @@
-CREATE DATABASE laravel2; 
+CREATE DATABASE laravel; 
 
-CREATE USER 'laravel2'@'localhost' IDENTIFIED BY 'secret';
+CREATE USER 'laravel'@'localhost' IDENTIFIED BY 'secret';
 
-GRANT ALL PRIVILEGES ON  laravel2.* TO 'laravel2'@'localhost';
+GRANT ALL PRIVILEGES ON  laravel.* TO 'laravel'@'localhost';
